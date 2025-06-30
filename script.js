@@ -6,7 +6,7 @@ let profesi = "Frontend Developer Pemula";
 let tahun = 2025;
 
 // 2. Operator
-let usia = tahun - 1988; // misal kamu lahir 1993
+let usia = tahun - 1988; // misal kamu lahir 1988
 
 // 3. Output ke layar
 alert("Halo, saya " + nama + ". Usia saya " + usia + " tahun.");

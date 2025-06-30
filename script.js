@@ -12,3 +12,14 @@ let usia = tahun - 1988; // misal kamu lahir 1988
 // 3. Output ke layar
 alert("Halo, saya " + nama + ". Usia saya " + usia + " tahun.");
 alert(alasan):
+
+// Minta nama dari user
+let namaUser = prompt("Halo! Siapa nama kamu?");
+
+// Fungsi untuk menyapa
+function sapaUser(nama) {
+  alert("Senang bertemu denganmu, " + nama + "!");
+}
+
+// Panggil fungsi
+sapaUser(namaUser);

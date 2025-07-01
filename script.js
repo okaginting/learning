@@ -67,5 +67,24 @@ window.onload = function () {
   // Inisialisasi teks tombol
   btnPendidikan.innerText = "Sembunyikan Pendidikan";
   btnKeahlian.innerText = "Sembunyikan Keahlian";
+  const darkToggle = document.getElementById("darkModeToggle");
+
+// Cek preferensi sebelumnya
+if (localStorage.getItem("tema") === "dark") {
+  document.body.classList.add("dark");
+  darkToggle.innerText = "☀️ Ganti ke Light Mode";
+}
+
+// Fungsi toggle dark mode
+darkToggle.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+
+  const isDark = document.body.classList.contains("dark");
+  localStorage.setItem("tema", isDark ? "dark" : "light");
+
+  darkToggle.innerText = isDark
+    ? "☀️ Ganti ke Light Mode"
+    : "🌙 Ganti ke Dark Mode";
+});
 };
 

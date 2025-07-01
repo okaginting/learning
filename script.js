@@ -34,5 +34,5 @@ teks.innerText = "Halo! Selamat datang di website Oka Ginting.";
   //teks.innerText = "Halo! Selamat datang di website Oka Ginting.";
 //};
 let tahunSekarang = new Date().getFullYear();
-let umur = tahunSekarang - 1993;
+let umur = tahunSekarang - 1988;
 document.getElementById("umur").innerText = "Umur saya: " + umur + " tahun";

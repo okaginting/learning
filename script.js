@@ -36,3 +36,6 @@ let tahunSekarang = new Date().getFullYear();
 let umur = tahunSekarang - 1988;
 document.getElementById("umur").innerText = "Umur saya: " + umur + " tahun";
 }
+function ubahSapaan() {
+  document.getElementById("sapaan").innerText = "Selamat datang kembali, Oka!";
+}

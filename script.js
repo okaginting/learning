@@ -30,8 +30,8 @@
 // Ubah teksnya
 //teks.innerText = "Halo! Selamat datang di website Oka Ginting.";
 window.onload = function() {
-  let teks = document.getElementById("sapaan");
-  teks.innerText = "Halo! Selamat datang di website Oka Ginting.";
+  //let teks = document.getElementById("sapaan");
+  //teks.innerText = "Halo! Selamat datang di website Oka Ginting.";
 let tahunSekarang = new Date().getFullYear();
 let umur = tahunSekarang - 1988;
 document.getElementById("umur").innerText = "Umur saya: " + umur + " tahun";

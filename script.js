@@ -47,19 +47,25 @@ window.onload = function () {
   const sectionPendidikan = document.getElementById("pendidikanSection");
   const sectionKeahlian = document.getElementById("keahlianSection");
 
+  // Awal: tampilkan semua
+  sectionPendidikan.style.display = "block";
+  sectionKeahlian.style.display = "block";
+
+  // Fungsi toggle + ubah teks tombol
   btnPendidikan.addEventListener("click", function () {
-    if (sectionPendidikan.style.display === "none") {
-      sectionPendidikan.style.display = "block";
-    } else {
-      sectionPendidikan.style.display = "none";
-    }
+    const visible = sectionPendidikan.style.display === "block";
+    sectionPendidikan.style.display = visible ? "none" : "block";
+    btnPendidikan.innerText = visible ? "Tampilkan Pendidikan" : "Sembunyikan Pendidikan";
   });
 
   btnKeahlian.addEventListener("click", function () {
-    if (sectionKeahlian.style.display === "none") {
-      sectionKeahlian.style.display = "block";
-    } else {
-      sectionKeahlian.style.display = "none";
-    }
+    const visible = sectionKeahlian.style.display === "block";
+    sectionKeahlian.style.display = visible ? "none" : "block";
+    btnKeahlian.innerText = visible ? "Tampilkan Keahlian" : "Sembunyikan Keahlian";
   });
+
+  // Inisialisasi teks tombol
+  btnPendidikan.innerText = "Sembunyikan Pendidikan";
+  btnKeahlian.innerText = "Sembunyikan Keahlian";
 };
+

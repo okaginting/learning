@@ -35,3 +35,4 @@ window.onload = function() {
 let tahunSekarang = new Date().getFullYear();
 let umur = tahunSekarang - 1988;
 document.getElementById("umur").innerText = "Umur saya: " + umur + " tahun";
+}

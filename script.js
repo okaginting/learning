@@ -57,6 +57,23 @@ window.onload = function () {
     sectionPendidikan.style.display = visible ? "none" : "block";
     btnPendidikan.innerText = visible ? "Tampilkan Pendidikan" : "Sembunyikan Pendidikan";
   });
+  // Saat klik tombol
+btnPendidikan.addEventListener("click", function () {
+  const visible = sectionPendidikan.style.display === "block";
+  sectionPendidikan.style.display = visible ? "none" : "block";
+  btnPendidikan.innerText = visible ? "Tampilkan Pendidikan" : "Sembunyikan Pendidikan";
+
+  // Simpan ke localStorage
+  localStorage.setItem("pendidikanVisible", !visible);
+});
+
+// Saat halaman dibuka, ambil preferensi
+const showPendidikan = localStorage.getItem("pendidikanVisible");
+if (showPendidikan === "false") {
+  sectionPendidikan.style.display = "none";
+  btnPendidikan.innerText = "Tampilkan Pendidikan";
+}
+
 
   btnKeahlian.addEventListener("click", function () {
     const visible = sectionKeahlian.style.display === "block";

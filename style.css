@@ -107,3 +107,31 @@ body.dark button {
 body.dark button:hover {
   background-color: #555;
 }
+
+/* ——— DARK MODE THEME ——— */
+body.dark {
+  background-color: #121212;
+  color: #e6e6e6;                 /* default teks semua elemen */
+}
+
+/* teks di dalam card/section */
+body.dark section,
+body.dark .card, 
+body.dark .container > div {
+  background-color: #1e1e1e;      /* kotak sedikit lebih terang dari bg */
+  color: #e6e6e6;                 /* pastikan paragraf/link terlihat */
+}
+
+/* link dalam dark mode */
+body.dark a {
+  color: #4da3ff;
+}
+body.dark a:hover {
+  color: #78bdff;
+}
+
+/* judul section */
+body.dark h2, 
+body.dark h3 {
+  color: #4da3ff;
+}

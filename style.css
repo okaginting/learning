@@ -88,3 +88,22 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark a {
+  color: #87cefa;
+}
+
+body.dark .btn,
+body.dark button {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark button:hover {
+  background-color: #555;
+}

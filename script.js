@@ -23,3 +23,9 @@ function sapaUser(nama) {
 
 // Panggil fungsi
 sapaUser(namaUser);
+
+// Ambil elemen dengan id 'sapaan'
+let teks = document.getElementById("sapaan");
+
+// Ubah teksnya
+teks.innerText = "Halo! Selamat datang di website Oka Ginting.";

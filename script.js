@@ -39,3 +39,27 @@ document.getElementById("umur").innerText = "Umur saya: " + umur + " tahun";
 function ubahSapaan() {
   document.getElementById("sapaan").innerText = "Selamat datang kembali, Oka!";
 }
+// Tunggu sampai semua elemen dimuat
+window.onload = function () {
+  const btnPendidikan = document.getElementById("togglePendidikan");
+  const btnKeahlian = document.getElementById("toggleKeahlian");
+
+  const sectionPendidikan = document.getElementById("pendidikanSection");
+  const sectionKeahlian = document.getElementById("keahlianSection");
+
+  btnPendidikan.addEventListener("click", function () {
+    if (sectionPendidikan.style.display === "none") {
+      sectionPendidikan.style.display = "block";
+    } else {
+      sectionPendidikan.style.display = "none";
+    }
+  });
+
+  btnKeahlian.addEventListener("click", function () {
+    if (sectionKeahlian.style.display === "none") {
+      sectionKeahlian.style.display = "block";
+    } else {
+      sectionKeahlian.style.display = "none";
+    }
+  });
+};

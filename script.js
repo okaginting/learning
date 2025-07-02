@@ -99,8 +99,8 @@ darkToggle.addEventListener("click", function () {
   localStorage.setItem("tema", isDark ? "dark" : "light");
 
   darkToggle.innerText = isDark
-    ? "☀️ Ganti ke Light Mode"
-    : "🌙 Ganti ke Dark Mode";
+    ? "🌙 Ganti ke Light Mode"
+    : "☀️ Ganti ke Dark Mode";
 });
 };
 

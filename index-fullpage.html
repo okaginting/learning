@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oka Ginting – Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- NAVBAR -->
+  <header class="bg-blue-600 text-white p-4 shadow">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Oka Ginting</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#tentang" class="hover:underline">Tentang</a></li>
+          <li><a href="#keahlian" class="hover:underline">Keahlian</a></li>
+          <li><a href="#proyek" class="hover:underline">Proyek</a></li>
+          <li><a href="#kontak" class="hover:underline">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- HERO SECTION -->
+  <section class="bg-blue-500 text-white py-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold">Halo, saya Oka Ginting</h2>
+    <p class="mt-2 text-lg">Frontend Web Developer Pemula yang sedang belajar Tailwind CSS</p>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="py-12 container mx-auto">
+    <h3 class="text-2xl font-semibold mb-4">Tentang Saya</h3>
+    <p>Saya sedang belajar HTML, CSS, JavaScript, dan Tailwind CSS untuk menjadi Web Developer remote.</p>
+  </section>
+
+  <!-- Keahlian -->
+  <section id="keahlian" class="py-12 bg-gray-100">
+    <div class="container mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Keahlian</h3>
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Tailwind</li>
+        <li>AutoCAD</li>
+        <li>PLC</li>
+        <li>SCADA</li>
+        <li>Inverter</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-12 container mx-auto">
+    <h3 class="text-2xl font-semibold mb-4">Kontak Saya</h3>
+    <form action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="POST" class="grid gap-4 max-w-md">
+      <input type="text" name="nama" placeholder="Nama" class="p-2 border rounded" required>
+      <input type="email" name="email" placeholder="Email" class="p-2 border rounded" required>
+      <textarea name="pesan" rows="4" placeholder="Pesan" class="p-2 border rounded" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4 mt-12">
+    <p>© 2025 Oka Ginting. Dibuat dengan cinta dan semangat belajar.</p>
+  </footer>
+</body>
+</html>
 

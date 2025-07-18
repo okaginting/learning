@@ -24,8 +24,16 @@
     </div>
   </header>
   
+ <script>
+function toggleDarkMode() {
+  document.documentElement.classList.toggle('dark');
+}
+</script>
+ 
    <!-- Tombol tema -->
   <button id="darkModeToggle">🌓 Ganti Tema</button>
+  <button onclick="toggleDarkMode()">🌗 Ganti Tema</button>
+
   
   <!-- HERO SECTION -->
   <section class="bg-blue-500 text-white py-20 text-center">

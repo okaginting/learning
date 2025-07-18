@@ -6,6 +6,11 @@
   <title>Oka Ginting – Portofolio</title>
   <script src="script.js"></script> 
  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+function toggleDarkMode() {
+  document.documentElement.classList.toggle('dark');
+}
+</script>
   
 </head>
 <body class="bg-white text-black dark:bg-gray-800 dark:text-white">
@@ -24,15 +29,10 @@
     </div>
   </header>
   
- <script>
-function toggleDarkMode() {
-  document.documentElement.classList.toggle('dark');
-}
-</script>
+ 
  
    <!-- Tombol tema -->
-  <button id="darkModeToggle">🌓 Ganti Tema</button>
-  <button onclick="toggleDarkMode()">🌗 Ganti Tema</button>
+   <button onclick="toggleDarkMode()">🌗 Ganti Tema</button>
 
   
   <!-- HERO SECTION -->

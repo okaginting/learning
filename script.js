@@ -1,37 +1,37 @@
 // Ini komentar di JavaScript
 
-// 1. Variabel
-//let nama = "Oka Ginting";
-//let profesi = "Frontend Developer Pemula";
-//let tahun = 2025;
-//let alasan = "karena ingin jadi Web Developer remote";
+ 1. Variabel
+let nama = "Oka Ginting";
+let profesi = "Frontend Developer Pemula";
+let tahun = 2025;
+let alasan = "karena ingin jadi Web Developer remote";
 
-// 2. Operator
-//let usia = tahun - 1988; // misal kamu lahir 1988
+ 2. Operator
+let usia = tahun - 1988; // misal kamu lahir 1988
 
-// 3. Output ke layar
-//alert("Halo, saya " + nama + ". Usia saya " + usia + " tahun.");
-//alert(alasan)://
+ 3. Output ke layar
+alert("Halo, saya " + nama + ". Usia saya " + usia + " tahun.");
+alert(alasan)://
 
 // Minta nama dari user
-//let namaUser = prompt("Halo! Siapa nama kamu?");
+let namaUser = prompt("Halo! Siapa nama kamu?");
 
 // Fungsi untuk menyapa
-//function sapaUser(nama) {
-//  alert("Senang bertemu denganmu, " + nama + "!");
-//}
+function sapaUser(nama) {
+  alert("Senang bertemu denganmu, " + nama + "!");
+}
 
 // Panggil fungsi
-//sapaUser(namaUser);
+sapaUser(namaUser);
 
 // Ambil elemen dengan id 'sapaan'
-//let teks = document.getElementById("sapaan");
+let teks = document.getElementById("sapaan");
 
 // Ubah teksnya
-//teks.innerText = "Halo! Selamat datang di website Oka Ginting.";
+teks.innerText = "Halo! Selamat datang di website Oka Ginting.";
 window.onload = function() {
-  //let teks = document.getElementById("sapaan");
-  //teks.innerText = "Halo! Selamat datang di website Oka Ginting.";
+  let teks = document.getElementById("sapaan");
+  teks.innerText = "Halo! Selamat datang di website Oka Ginting.";
 let tahunSekarang = new Date().getFullYear();
 let umur = tahunSekarang - 1988;
 document.getElementById("umur").innerText = "Umur saya: " + umur + " tahun";
@@ -58,21 +58,21 @@ window.onload = function () {
     btnPendidikan.innerText = visible ? "Tampilkan Pendidikan" : "Sembunyikan Pendidikan";
   });
   // Saat klik tombol
-//btnPendidikan.addEventListener("click", function () {
-//  const visible = sectionPendidikan.style.display === "block";
- // sectionPendidikan.style.display = visible ? "none" : "block";
-//  btnPendidikan.innerText = visible ? "Tampilkan Pendidikan" : "Sembunyikan Pendidikan";
+btnPendidikan.addEventListener("click", function () {
+  const visible = sectionPendidikan.style.display === "block";
+  sectionPendidikan.style.display = visible ? "none" : "block";
+  btnPendidikan.innerText = visible ? "Tampilkan Pendidikan" : "Sembunyikan Pendidikan";
 
   // Simpan ke localStorage
-//  localStorage.setItem("pendidikanVisible", !visible);
-//});
+  localStorage.setItem("pendidikanVisible", !visible);
+});
 
 // Saat halaman dibuka, ambil preferensi
-//const showPendidikan = localStorage.getItem("pendidikanVisible");
-//if (showPendidikan === "false") {
-//  sectionPendidikan.style.display = "none";
-//  btnPendidikan.innerText = "Tampilkan Pendidikan";
-//}
+const showPendidikan = localStorage.getItem("pendidikanVisible");
+if (showPendidikan === "false") {
+  sectionPendidikan.style.display = "none";
+  btnPendidikan.innerText = "Tampilkan Pendidikan";
+}
 
   btnKeahlian.addEventListener("click", function () {
     const visible = sectionKeahlian.style.display === "block";
